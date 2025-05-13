@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Dashboard</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <header class="header">
+      <img class="logo-small" src="assets/ai-industries.png" alt="Mini Logo" />
+      <div class="white-box"></div>
+
+      <div>
+        <div class="navbar-right">
+          <auto-align-dropdown options='["English", "Arabic"]' default="English"></auto-align-dropdown>
+
+          <div class="profile">
+            <div class="profile-info">
+              <div class="username">User Name</div>
+              <div class="designation">Designation</div>
+            </div>
+
+            <div class="avatar-user">
+              <div class="profile-icons">
+                <div class="avatar-wrapper">
+                  <img src="assets/user.png" alt="User Avatar" class="user-avatar-icon" />
+                </div>
+              </div>
+              <div class="chevron-down">
+                <auto-align-dropdown  no-border icon-only options='["Logout"]'></auto-align-dropdown>
+              </div>
+            </div>
+    </header>
+
+   
+    <!-- <footer class="footer">
+      &copy; 2024 Arabian Industries. Support: emphelpdesk@arabian-industries.net
+    </footer> -->
+  </div>
+  <script type="module" src="components/quick-links.js"></script>
+  <script type="module" src="components/zoho-leave-tracker.js"></script>
+  <script type="module" src="components/carousel.js"></script>
+  <script type="module" src="components/pending-approvals.js"></script>
+  <script type="module" src="components/linkedIn-feeds.js"></script>
+  <script type="module" src="components/user-carousel.js"></script>
+  <script type="module" src="components/fullwidth-imagecarousel.js"></script>
+  <script type="module" src="components/auto-align-dropdown.js"></script>
+</body>
+
 </html>
