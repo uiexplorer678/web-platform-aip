@@ -1,10 +1,11 @@
 const cardsData = [
-    { title: 'Admin Portal', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', icon: 'assets/icon-1.png' },
-    { title: 'Exit Management', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', icon: 'assets/exit.png' },
-    { title: 'Enquiry Registration', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', icon: 'assets/icon-2.png' },
-    { title: 'Portal 4', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', icon: 'assets/icon-1.png' },
-    { title: 'Portal 5', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', icon: 'assets/exit.png' },
-    { title: 'Portal 6', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', icon: 'assets/icon-2.png' }
+    { title: 'Admin Portal', description: 'Centralized platform that allows administrators to manage users, settings, permissions, and system configurations.', icon: 'assets/admin-portal.png' },
+    { title: 'Exit Management', description: 'Helps organizations manage the employee exit process, including resignation, exit interviews, final settlements, asset recovery, and policy compliance.', icon: 'assets/exit-management.svg' },
+    { title: 'Enquiry Registration', description: ' Offers a bid form that gathers essential project details such as scope, deadlines, and financial terms to evaluate feasibility and track bid status and amounts.', icon: 'assets/enquiry-registration.svg' },
+    { title: 'Vendor MS', description: ' Software application that enables organizations to efficiently manage their vendors and suppliers by streamlining processes such as payment applications and invoicing.', icon: 'assets/vendor-ms.svg' },
+    { title: 'HR System Management', description: 'An application that streamlines HR tasks like payroll, attendance, leave, recruitment, and performance in one integrated platform.', icon: 'assets/hr-system-management.svg' },
+    { title: 'PM Systems', description: 'An application that helps plan, organize, manage resources, and develop resource estimates.', icon: 'assets/pm-systems.svg' },
+    { title: 'Power BI Reports', description: 'offers dashboards and reports with various features, enabling users to view and download data.', icon: 'assets/power-bi.svg' }
 ];
 
 const visibleCount = 3;
@@ -33,7 +34,7 @@ function renderCarousel() {
   </div>
 </div>
         <div style="font-weight: 600; color: var(--card-title-color);text-align:center;">${card.title}</div>
-        <div style="font-size: 14px; color: var(--card-desc-color);text-align:center;">${card.description}</div>
+        <div style="font-size: 10px; color: var(--card-desc-color);text-align:center;">${card.description}</div>
      
       `;
         track.appendChild(cardDiv);

@@ -1,0 +1,97 @@
+.ticket-tracker {
+    width: 100%;
+    box-sizing: border-box;
+}
+.zoho-ticket-tracker {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+}
+
+.zoho-leave-container {
+    width: 100%;
+    background: var(--color-white);
+    border-radius: var(--border-radius-container);
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-base);
+    box-sizing: border-box;
+}
+
+.zoho-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 12px;
+    border-bottom: 1px solid var(--color-border);
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badges {
+    min-width: 85px;
+    height: 36px;
+    padding: 3px 10px;
+    background: var(--color-primary-light, #F2F1FF);
+    border-radius: var(--border-radius-badge, 4px);
+    outline: 1px solid var(--primary-color, #2E3192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--primary-color, #2E3192);
+    font-size: 14px;
+}
+
+.see-all {
+    color: var(--primary-color, #2E3192);
+    font-size: var(--font-size-small, 14px);
+    font-family: var(--font-family-base, 'Inter', sans-serif);
+    font-weight: var(--font-weight-bold, 700);
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+}
+
+.user-input {
+    padding: 26px 12px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: var(--padding-input);
+    border: 1px solid var(--color-gray);
+    border-radius: var(--border-radius-input);
+    font-size: var(--font-size-input);
+    font-family: var(--font-family-base);
+    box-sizing: border-box;
+}
+
+.search-box input:focus {
+    border-color: var(--color-gray);
+    outline: none;
+    box-shadow: none;
+}
+
+.search-box .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: opacity var(--transition-speed);
+}
+
+.icon.hidden {
+    opacity: 0;
+    visibility: hidden;
+}

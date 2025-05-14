@@ -28,7 +28,9 @@ class ZohoTicketTracker extends HTMLElement {
         <div class="zoho-container">
           <div class="zoho-ticket-tracker">${this.title}</div>
           ${this.showSeeAll ? `
-             <div class="zoho-badge">See All</div>` : ''}
+          <div class="see-all-container">
+          <div class="see-all-button">See All</div>
+        </div>` : ''}
         </div>
         <div class="user-input">
          <div class="search-box">

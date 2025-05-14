@@ -78,6 +78,7 @@ class UserCarousel extends HTMLElement {
           overflow: hidden;
           flex: 1;
           gap: 16px;
+          justify-content: center;
         }
 
         .carousel__card {
@@ -87,6 +88,7 @@ class UserCarousel extends HTMLElement {
           flex: 0 0 calc(33.333% - 10.6px);
           box-sizing: border-box;
           text-align: center;
+          justify-items: anchor-center;
         }
 
         .carousel__card-icon img {

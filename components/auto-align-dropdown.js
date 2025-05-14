@@ -42,7 +42,6 @@ class AutoAlignDropdown extends HTMLElement {
           :host {
             position: relative;
             display: inline-block;
-            font-family: sans-serif;
           }
 
           button {
@@ -56,6 +55,8 @@ class AutoAlignDropdown extends HTMLElement {
             font-size: 1rem;
             width: 146px;
             height: 38px;
+            color: #637381;
+            border-radius:8px;
           }
 
           button.icon-only {

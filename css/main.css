@@ -1,1 +1,12 @@
+@import 'variables.css';
 @import 'dashboard.css';
+@import 'header.css';
+@import 'applications.css';
+@import 'carousel.css';
+@import 'linkedIn.css';
+@import 'pending-approvals.css';
+@import 'work-anniversary.css';
+@import 'zoho-leave-tracker.css';
+body {
+    margin:0;
+}

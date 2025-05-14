@@ -1,0 +1,72 @@
+/* ========== VARIABLES ========== */
+:root {
+  /* Colors */
+
+  --secondary-color: #D998C3;
+  --font-regular: "Roboto", sans-serif;
+  --card-title-color: #1f2937;
+  --card-desc-color: #6b7280;
+  --primary-color: #2E3192;
+  --secondary-color: #00A651;
+  --background-color: #FAF9FF;
+  --header-bg-color: #FFFFFF;
+  --footer-bg-color: #1f1f1f;
+  --text-color-dark: #111928;
+  --text-color-light: #637381;
+  --weather-card-bg: #176A72;
+  --badge-bg: #F2F1FF;
+  --badge-text-color: #2E3192;
+  --link-hover-color: #01A9DB;
+  --link-text-color: #485563;
+  --white: #FFFFFF;
+  --color-border: #DFE4EA;
+  --color-primary-light: #F2F1FF;
+  --color-text-dark: #1F2A37;
+  --color-gray: #ccc;
+
+  --carousel-bg: #ffffff;
+  --carousel-border: #DFE4EA;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  --card-title-color: #212B36;
+  --card-desc-color: #637381;
+
+  /* Spacing */
+  --padding-small: 8px;
+  --padding-medium: 16px;
+  --padding-large: 32px;
+  --padding-container: 10px 0;
+  --padding-header: 12px 24px;
+  --padding-badge: 3px 10px;
+  --padding-user-input: 18px;
+  --padding-input: 10px 40px 10px 15px;
+
+  /* Fonts */
+  --font-regular: 'Roboto', sans-serif;
+  --font-bold: 'Roboto', sans-serif;
+  --font-small: 'Inter', sans-serif;
+  --font-family-base: 'Inter', sans-serif;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --font-size-heading: 23px;
+  --font-size-title: 18px;
+  --font-size-badge: 14px;
+  --font-size-input: 16px;
+
+  /* Borders */
+  --border-radius: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-container: 16px;
+  --border-radius-badge: 4px;
+  --border-radius-input: 6px;
+  --border-width: 1px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Transitions */
+  --transition-speed: 0.2s;
+}

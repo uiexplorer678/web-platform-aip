@@ -1,0 +1,58 @@
+
+.card-section {
+    padding: 10px 0;
+    background: var(--White, white);
+    border-radius: 16px;
+    outline: 1px solid #DFE4EA;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.heading {
+    width: 100%;
+    min-height: 56px;
+    position: relative;
+}
+
+.heading-frame {
+    padding: 12px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title-text {
+    color: var(--Dark-2, #1F2A37);
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.see-all-badge {
+    padding: 3px 10px;
+    background: var(--Primary-light-4, #F2F1FF);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.see-all-text {
+    color: var(--primary, #2E3192);
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+}

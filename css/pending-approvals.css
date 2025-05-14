@@ -1,0 +1,143 @@
+.pa-container {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.pa-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid #DFE4EA;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pa-header-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1F2A37;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-wrapper:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-wrapper::after {
+    content: "";
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.icon-wrapper img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.pa-header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pa-see-all {
+    padding: 3px 10px;
+    border: 1px solid #2E3192;
+    background: #F2F1FF;
+    border-radius: 4px;
+    color: #2E3192;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.pa-cards {
+    display: flex;
+    gap: 16px;
+    padding: 16px 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.pa-card {
+    flex: 1 1 200px;
+    max-width: 240px;
+    min-width: 180px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+}
+
+.pa-card:hover {
+    transform: translateY(-4px);
+}
+
+.pa-card-title {
+    color: #F08262;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.pa-card-subtitle {
+    color: #F08262;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pa-card-text {
+    font-size: 14px;
+    color: #637381;
+    text-align: center;
+}
+
+.pa-view-button {
+    background: #2E3192;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    align-self: center;
+    white-space: nowrap;
+}
