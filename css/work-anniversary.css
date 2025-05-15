@@ -2,7 +2,6 @@
     width: 195px;
     color: var(--Dark-2, #1F2A37);
     font-size: 18px;
-    font-family: Roboto;
     font-weight: 600;
     text-transform: uppercase;
     word-wrap: break-word;
@@ -18,8 +17,8 @@
 }
 
 .work-anniversary-title {
+    font-family: var(--font-bold);
     font-size: 18px;
-    font-family: Roboto;
     font-weight: 600;
     text-transform: uppercase;
     color: #1F2A37;

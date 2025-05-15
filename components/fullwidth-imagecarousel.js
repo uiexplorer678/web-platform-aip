@@ -4,11 +4,11 @@ class FullwidthCarousel extends HTMLElement {
     this.attachShadow({ mode: 'open' });
 
     this.images = [
-      'assets/Pic-2.jpeg',
-      'assets/Pic-3.jpeg',
-      'assets/Pic-2.jpg',
-      'assets/Pic-3.jpeg',
-      'assets/Pic-2.jpeg',
+      'assets/Pic-3.jpg',
+      'assets/Pic-3.jpg',
+      'assets/Pic-3.jpg',
+      'assets/Pic-3.jpg',
+      'assets/Pic-3.jpg',
       'assets/Pic-3.jpg',
     ];
 

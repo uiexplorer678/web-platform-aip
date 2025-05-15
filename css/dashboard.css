@@ -237,9 +237,15 @@
     border: 1px solid #DFE4EA;
     box-shadow: 0 10px 30px rgba(217, 217, 217, 0.1);
     flex: 1 1 300px;
-    min-width: 300px;
-    max-width: 100%;
     box-sizing: border-box;
+    max-width: 100%;
+}
+.linkedin-card-container{
+    min-width: 450px;
+    
+}
+.work-anniversary-container{
+    min-width: 300px;
 }
 
 .see-all-container {

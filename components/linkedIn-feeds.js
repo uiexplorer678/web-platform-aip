@@ -1,7 +1,7 @@
 const feeds = [
-  { title: "Post about AI trends", author: "Jane Doe", time: "2h ago" },
-  { title: "Company culture insights", author: "Acme Corp", time: "5h ago" },
-  { title: "Hiring tips from experts", author: "John Smith", time: "1d ago" },
+  { title: "Post about AI trends", author: "Our series of user friendly tools to support your needs for seamless our series of user friendly tools to support your needs for seamless a our series of user friendly tools to support your needs for seamless...", time: "2h ago" },
+  { title: "Company culture insights", author: "Our series of user friendly tools to support your needs for seamless our series of user friendly tools to support your needs for seamless a our series of user friendly tools to support your needs for seamless...", time: "5h ago" },
+  { title: "Hiring tips from experts", author: "Our series of user friendly tools to support your needs for seamless our series of user friendly tools to support your needs for seamless a our series of user friendly tools to support your needs for seamless...", time: "1d ago" },
 ];
 
 function renderLinkedInFeedsCard(titleText = "Linkedin Feeds", feedItems = []) {

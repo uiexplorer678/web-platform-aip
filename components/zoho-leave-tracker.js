@@ -53,6 +53,15 @@ class ZohoTicketTracker extends HTMLElement {
       seeAllButton.className = 'see-all-button';
       seeAllButton.textContent = 'See All';
 
+      seeAllButton.addEventListener('click', () => {
+        const popover = document.getElementById('myPopover');
+        if (popover && typeof popover.open === 'function') {
+          popover.open();
+        } else {
+          console.warn('Popover element with id "myPopover" not found or does not have an open() method.');
+        }
+      });
+
       seeAllContainer.appendChild(seeAllButton);
       zohoContainer.appendChild(seeAllContainer);
     }

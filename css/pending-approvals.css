@@ -17,6 +17,7 @@
 }
 
 .pa-header-title {
+    font-family: var(--font-bold);
     font-weight: 600;
     font-size: 18px;
     color: #1F2A37;
