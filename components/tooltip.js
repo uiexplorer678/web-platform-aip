@@ -6,26 +6,9 @@ class CustomTooltip extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-  }
 
-  connectedCallback() {
-    this.render();
-  }
-
-  attributeChangedCallback() {
-    this.render();
-  }
-
-  get tooltipText() {
-    return this.getAttribute('text') || '';
-  }
-
-  get position() {
-    return this.getAttribute('position') || 'bottom';
-  }
-
-  render() {
-    const style = `
+    this.styleEl = document.createElement('style');
+    this.styleEl.textContent = `
       :host {
         position: relative;
         display: inline-block;
@@ -110,20 +93,60 @@ class CustomTooltip extends HTMLElement {
       }
     `;
 
-    const arrowSVG = `
-      <svg viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8.25671 0.825883C8.65395 0.384502 9.34605 0.384502 9.74329 0.825882L18 10L0 10L8.25671 0.825883Z" fill="#EBEBEB"/>
-      </svg>
-    `;
+    this.shadowRoot.appendChild(this.styleEl);
 
-    this.shadowRoot.innerHTML = `
-      <style>${style}</style>
-      <slot></slot>
-      <div class="tooltip-box" data-position="${this.position}">
-        ${this.tooltipText}
-        <div class="tooltip-arrow">${arrowSVG}</div>
-      </div>
-    `;
+    this.slotEl = document.createElement('slot');
+    this.shadowRoot.appendChild(this.slotEl);
+
+    this.tooltipBox = document.createElement('div');
+    this.tooltipBox.className = 'tooltip-box';
+    this.shadowRoot.appendChild(this.tooltipBox);
+
+    this.tooltipArrow = document.createElement('div');
+    this.tooltipArrow.className = 'tooltip-arrow';
+    this.tooltipBox.appendChild(this.tooltipArrow);
+
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', '0 0 18 10');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('xmlns', svgNS);
+
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('d', 'M8.25671 0.825883C8.65395 0.384502 9.34605 0.384502 9.74329 0.825882L18 10L0 10L8.25671 0.825883Z');
+    path.setAttribute('fill', '#EBEBEB');
+
+    svg.appendChild(path);
+    this.tooltipArrow.appendChild(svg);
+  }
+
+  connectedCallback() {
+    this._updateTooltip();
+  }
+
+  attributeChangedCallback(name, oldVal, newVal) {
+    if (oldVal !== newVal) {
+      this._updateTooltip();
+    }
+  }
+
+  get tooltipText() {
+    return this.getAttribute('text') || '';
+  }
+
+  get position() {
+    return this.getAttribute('position') || 'bottom';
+  }
+
+  _updateTooltip() {
+    this.tooltipBox.dataset.position = this.position;
+
+    while (this.tooltipBox.firstChild && this.tooltipBox.firstChild !== this.tooltipArrow) {
+      this.tooltipBox.removeChild(this.tooltipBox.firstChild);
+    }
+
+    const textNode = document.createTextNode(this.tooltipText);
+    this.tooltipBox.insertBefore(textNode, this.tooltipArrow);
   }
 }
 

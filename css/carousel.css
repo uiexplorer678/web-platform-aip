@@ -89,7 +89,7 @@
 }
 
 .card-description {
-    font-size: 0.875rem;
+    font-size: 10px;
     color: var(--card-desc-color, #6b7280);
     word-wrap: break-word;
 }

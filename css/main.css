@@ -7,6 +7,9 @@
 @import 'pending-approvals.css';
 @import 'work-anniversary.css';
 @import 'zoho-leave-tracker.css';
+@import 'media-queries.css';
+@import 'quicklinks.css';
+@import 'leavebalance.css';
 body {
     margin:0;
 }

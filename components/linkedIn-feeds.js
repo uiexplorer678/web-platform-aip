@@ -6,35 +6,76 @@ const feeds = [
 
 function renderLinkedInFeedsCard(titleText = "Linkedin Feeds", feedItems = []) {
   const container = document.getElementById("linkedin-feeds");
+  container.textContent = '';
+  const header = document.createElement('div');
+  header.classList.add('linkedin-card-header');
 
-  let feedHtml = feedItems.map(feed =>
-    `<div class="linkedin-feed-item-wrapper">
-    <img src="assets/user.png" alt="info" class="icon" width="24" height="24"/>
-    <div class="linkedin-feed-item">
-        <div class="linkedin-feed-title">${feed.title}</div>
-        <div class="linkedin-feed-meta">By ${feed.time}</div>
-        <div class="linkedin-feed-deesc">By ${feed.author}</div>
-      </div>
-      <div>
-      <img src="assets/linkedIn.png" alt="info" class="icon" />
-      </div></div>
-      `
-  ).join('');
+  const title = document.createElement('div');
+  title.classList.add('linkedin-card-title');
+  title.textContent = titleText;
 
-  container.innerHTML = `
-      <div class="linkedin-card-header">
-        <div class="linkedin-card-title">
-          ${titleText}
-        </div>
-        <div class="see-all-container">
-        <div class="see-all-button">See All</div>
-      </div>
-      </div>
-      <div class="linkedin-feed-list">
-        ${feedHtml}
-      </div>
-    `;
+  const seeAllContainer = document.createElement('div');
+  seeAllContainer.classList.add('see-all-container');
+
+  const seeAllButton = document.createElement('div');
+  seeAllButton.classList.add('see-all-button');
+  seeAllButton.textContent = 'See All';
+
+  seeAllContainer.appendChild(seeAllButton);
+  header.appendChild(title);
+  header.appendChild(seeAllContainer);
+
+  const feedList = document.createElement('div');
+  feedList.classList.add('linkedin-feed-list');
+
+  feedItems.forEach(feed => {
+    const itemWrapper = document.createElement('div');
+    itemWrapper.classList.add('linkedin-feed-item-wrapper');
+
+    const userIcon = document.createElement('img');
+    userIcon.src = 'assets/user.png';
+    userIcon.alt = 'info';
+    userIcon.classList.add('icon');
+    userIcon.width = 24;
+    userIcon.height = 24;
+
+    const feedItem = document.createElement('div');
+    feedItem.classList.add('linkedin-feed-item');
+
+    const feedTitle = document.createElement('div');
+    feedTitle.classList.add('linkedin-feed-title');
+    feedTitle.textContent = feed.title;
+
+    const feedMeta = document.createElement('div');
+    feedMeta.classList.add('linkedin-feed-meta');
+    feedMeta.textContent = `By ${feed.time}`;
+
+    const feedAuthor = document.createElement('div');
+    feedAuthor.classList.add('linkedin-feed-deesc');
+    feedAuthor.textContent = `By ${feed.author}`;
+
+    feedItem.appendChild(feedTitle);
+    feedItem.appendChild(feedMeta);
+    feedItem.appendChild(feedAuthor);
+
+    const linkedInIconWrapper = document.createElement('div');
+    const linkedInIcon = document.createElement('img');
+    linkedInIcon.src = 'assets/linkedIn.png';
+    linkedInIcon.alt = 'info';
+    linkedInIcon.classList.add('icon');
+
+    linkedInIconWrapper.appendChild(linkedInIcon);
+
+    itemWrapper.appendChild(userIcon);
+    itemWrapper.appendChild(feedItem);
+    itemWrapper.appendChild(linkedInIconWrapper);
+
+    feedList.appendChild(itemWrapper);
+  });
+
+  container.appendChild(header);
+  container.appendChild(feedList);
 }
 
-// Initialize with data
+
 renderLinkedInFeedsCard("Linkedin Feeds", feeds);

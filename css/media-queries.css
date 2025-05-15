@@ -1,0 +1,104 @@
+@media (max-width: 1024px) {
+    .card-bisection {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .linkedin-card-container,
+    .work-anniversary-container,
+    .leave-balance-card {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .user-row {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .user-card-section {
+        flex: 2;
+    }
+
+    .right-column {
+        flex: 1;
+    }
+}
+@media (min-width: 1024px) {
+    .right-column {
+        width: auto;
+        max-width: 350px;
+    }
+  
+}
+
+@media (min-width: 1024px) {
+    .top-row {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .user-info-section {
+        flex: 2;
+    }
+
+    .right-column {
+        flex: 1;
+    }
+}
+@media (max-width: 1024px) {
+    .quicklink-list {
+        width: 100%;
+    } 
+    #quicklinksstack{
+        padding:32px;
+    }
+}
+
+
+@media (max-width: 864px) {
+    .right-column {
+        align-items: stretch;
+    }
+
+    .quick-links {
+        width: 100% !important;
+        justify-content: flex-start;
+    }
+
+    .quicklinks-container {
+        width: 100%;
+    }
+
+    .quicklink-list {
+        width: 100%;
+    }
+
+    .dashboard-container {
+        width: fit-content;
+    }
+
+    .user-card-bg {
+        padding: 0
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 0.75rem;
+    }
+
+    .weather-card .weather-temp {
+        font-size: 1.5rem;
+    }
+
+    .avatar {
+        width: 32px;
+        height: 32px;
+    }
+}

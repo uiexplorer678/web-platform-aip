@@ -95,19 +95,8 @@
 
                 </div>
               </div>
-              <div class="carousel-container">
-                <button class="carousel-button prev" id="prevBtn" disabled>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="icon">
-                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </button>
-                <div class="carousel-track-wrapper">
-                  <div class="carousel-track" id="carouselTrack"></div>
-                </div>
-                <button class="carousel-button next" id="nextBtn">
-                  <img src="assets/chevron-right.svg" alt="chevron" width="18" height="18" /></button>
-              </div>
+              <applications-carousel></applications-carousel>
+
             </section>
             <section class="card-section">
               <div class="pa-container">
@@ -120,7 +109,7 @@
                   </div>
                   <div class="pa-header-controls">
                     <div class="see-all-container">
-                      <div class="see-all-button">See All</div>
+                      <div class="see-all-button" onclick="document.getElementById('myPopover').open()">See All</div>
                     </div>
                   </div>
                 </div>
@@ -155,7 +144,7 @@
             <div class="work-anniversary-header">
               <div class="work-anniversary-title">Work Anniversary</div>
               <div class="see-all-container">
-                <div class="see-all-button">See All</div>
+                <div class="see-all-button" onclick="document.getElementById('myPopover').open()">See All</div>
               </div>
             </div>
             <user-carousel></user-carousel>
@@ -171,7 +160,7 @@
                 </div>
               </div>
               <div class="see-all-container">
-                <div class="see-all-button">See All</div>
+                <div class="see-all-button" onclick="document.getElementById('myPopover').open()">See All</div>
               </div>
             </div>
 
@@ -197,7 +186,16 @@
         <fullwidth-carousel></fullwidth-carousel>
       </section>
     </main>
-
+    <popover-component id="myPopover">
+      <div slot="body">
+        <h3>My Dynamic Form</h3>
+        <input type="text" placeholder="Your name" />
+      </div>
+      <div slot="footer">
+        <button class="cancel-btn">Cancel</button>
+        <button class="save-btn">Save</button>
+      </div>
+    </popover-component>
     <footer class="footer">
       &copy; 2024 Arabian Industries. Support: emphelpdesk@arabian-industries.net
     </footer>
@@ -211,6 +209,7 @@
   <script type="module" src="components/fullwidth-imagecarousel.js"></script>
   <script type="module" src="components/auto-align-dropdown.js"></script>
   <script type="module" src="components/tooltip.js"></script>
+  <script type="module" src="components/popover.js"></script>
 </body>
 
 </html>

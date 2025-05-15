@@ -1,0 +1,116 @@
+.quicklinks-container {
+    width: 100%;
+    max-height: 100%;
+    padding: var(--padding-small) 0;
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    border: var(--border-width) solid #DFE4EA;
+    display: flex;
+    flex-direction: column;
+}
+
+.quicklink-header {
+    padding: var(--padding-small) var(--padding-large);
+    border-bottom: var(--border-width) solid #DFE4EA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quicklink-header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quicklink-title-text {
+    color: var(--Dark-2, #1F2A37);
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+#quicklinksstack {
+    max-height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: var(--padding-small);
+    scrollbar-width: thin;
+    scrollbar-color: #D9D9D9 transparent;
+    margin-bottom: 10px;
+}
+
+#quicklinksstack::-webkit-scrollbar {
+    width: 8px;
+}
+
+#quicklinksstack::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#quicklinksstack::-webkit-scrollbar-thumb {
+    background-color: #D9D9D9;
+    border-radius: 4px;
+}
+
+.quicklink-list {
+    padding: 18px 12px;
+    background: white;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 180px;
+    cursor: pointer;
+}
+
+.quicklink-list:hover .text-content:hover {
+    color: var(--Secondary-Cyan, #01B3C4);
+}
+
+.quicklink-user-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: var(--Dark-2, #1F2A37);
+    transition: color 0.2s ease;
+}
+
+.quicklink-user-item:hover,.quicklink-text-content:hover {
+    color: var(--Info, #01A9DB);
+}
+
+.quicklink-user-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.quicklink-text-content {
+    color: #111928;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    transition: color 0.3s ease;
+}
+
+.quicklink-external-link {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.quicklink-external-link svg path {
+    stroke: #485563;
+    transition: stroke 0.3s ease;
+}
+
+.quicklink-list:hover .quicklink-external-link svg path {
+    stroke: #01B3C4;
+}
