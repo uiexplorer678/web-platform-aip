@@ -36,8 +36,8 @@ function renderLinkedInFeedsCard(titleText = "Linkedin Feeds", feedItems = []) {
     userIcon.src = 'assets/user.png';
     userIcon.alt = 'info';
     userIcon.classList.add('icon');
-    userIcon.width = 24;
-    userIcon.height = 24;
+    userIcon.width = 32;
+    userIcon.height = 32;
 
     const feedItem = document.createElement('div');
     feedItem.classList.add('linkedin-feed-item');
@@ -62,6 +62,8 @@ function renderLinkedInFeedsCard(titleText = "Linkedin Feeds", feedItems = []) {
     const linkedInIcon = document.createElement('img');
     linkedInIcon.src = 'assets/linkedIn.png';
     linkedInIcon.alt = 'info';
+    linkedInIcon.width = '20';
+    linkedInIcon.height ='20';
     linkedInIcon.classList.add('icon');
 
     linkedInIconWrapper.appendChild(linkedInIcon);

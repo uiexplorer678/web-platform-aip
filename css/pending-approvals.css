@@ -4,6 +4,7 @@
     border-radius: 16px;
     margin: auto;
     box-sizing: border-box;
+    font-family: var(--font-bold)
 }
 
 .pa-header {
@@ -81,8 +82,8 @@
 
 .pa-cards {
     display: flex;
-    gap: 16px;
-    padding: 16px 24px;
+    gap: 24px;
+    padding: 16px 0px;
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;

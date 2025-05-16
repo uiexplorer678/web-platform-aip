@@ -49,7 +49,7 @@
     background: linear-gradient(126deg, var(--primary-color) 21%, var(--secondary-color) 100%);
     width: 100%;
     border-radius: var(--border-radius-lg);
-    padding: var(--padding-small);
+    padding: 8px 16px;
     box-sizing: border-box;
     height: auto;
     overflow: visible;
@@ -59,7 +59,7 @@
 .user-info-card {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
     color: white;
     font-family: Roboto, sans-serif;
 }
@@ -79,7 +79,7 @@
 }
 
 .username {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -91,7 +91,7 @@
 
 .title,
 .emp-id {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -112,8 +112,8 @@
 .label {
     margin-top: 8px;
     color: white;
-    font-size: 14px;
-    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-family: var(--font-regular);
     font-weight: 600;
 }
 
@@ -145,6 +145,7 @@
     flex-wrap: wrap;
     flex: 1;
     padding: 8px;
+    font-family: var(--font-bold);
 }
 
 .chennai,
@@ -251,8 +252,6 @@
 .see-all-container {
     width: 80px;
     height: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
     background: var(--Primary-light-4, #F2F1FF);
@@ -266,10 +265,10 @@
 }
 
 .see-all-button {
+    font-family: var(--font-regular);
     text-align: center;
     color: var(--primary, #2E3192);
     font-size: 14px;
-    font-family: Inter;
     font-weight: 700;
     line-height: 20px;
     word-wrap: break-word

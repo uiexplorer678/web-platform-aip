@@ -103,6 +103,8 @@ class ZohoTicketTracker extends HTMLElement {
     userInput.appendChild(searchBox);
     zohoLeaveContainer.appendChild(userInput);
 
+    
+
     shadow.appendChild(zohoLeaveContainer);
 
     this.setupInputBehavior(input, iconSpan);

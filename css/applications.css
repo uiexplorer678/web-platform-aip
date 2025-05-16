@@ -1,12 +1,10 @@
 
 .card-section {
-    padding: 10px 0;
     background: var(--White, white);
     border-radius: 16px;
     outline: 1px solid #DFE4EA;
     display: flex;
     flex-direction: column;
-    gap: 16px;
     width: 100%;
     box-sizing: border-box;
 }

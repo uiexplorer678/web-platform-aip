@@ -27,6 +27,7 @@
 
 .carousel-track-wrapper {
     overflow: hidden;
+    padding-bottom: 8px;
 }
 
 .carousel-track {
@@ -77,6 +78,7 @@
 }
 
 .card-title {
+    font-family: var(--font-bold);
     font-size: 1rem;
     font-weight: 600;
     color: var(--card-title-color, #1f2937);
@@ -89,6 +91,7 @@
 }
 
 .card-description {
+    font-family: var(--font-regular);
     font-size: 10px;
     color: var(--card-desc-color, #6b7280);
     word-wrap: break-word;

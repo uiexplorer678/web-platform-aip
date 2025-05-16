@@ -33,31 +33,29 @@ class AutoAlignDropdown extends HTMLElement {
       }
       button.dropdown-trigger {
         cursor: pointer;
-        padding: 0.5rem 1rem;
-        background: white;
-        border: 1px solid #ccc;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 1rem;
-        width: 146px;
-        height: 38px;
-        color: #637381;
-        border-radius: 8px;
-        position: relative;
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 110px;
+    height: 32px;
+    color: #637381;
+    border-radius: 8px;
+    position: relative;
       }
       button.dropdown-icon-only {
         padding: 0.5rem;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         justify-content: center;
       }
       .dropdown-chevron {
         transition: transform 0.3s ease;
         position: absolute;
         right: 10px;
-        top: 10px;
+        top: 5px;
         pointer-events: none;
       }
       .dropdown-chevron.up {
@@ -95,7 +93,7 @@ class AutoAlignDropdown extends HTMLElement {
         background-color: #f0f0f0;
       }
       .dropdown-label {
-        flex-grow: 1;
+        padding-left:8px;
       }
     `;
     this.shadowRoot.appendChild(style);

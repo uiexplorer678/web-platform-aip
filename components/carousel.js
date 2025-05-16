@@ -47,7 +47,9 @@ class ApplicationsCarousel extends HTMLElement {
   
       this.nextBtn = document.createElement('button');
       this.nextBtn.className = 'carousel-button next';
-      this.nextBtn.innerHTML = `<img src="assets/chevron-right.svg" alt="chevron" width="18" height="18" />`;
+      this.nextBtn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="icon">
+      <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>`;
   
       container.append(this.prevBtn, trackWrapper, this.nextBtn);
       this.shadowRoot.append(link, container);

@@ -48,10 +48,11 @@
 }
 
 .linkedin-feed-meta {
-    font-size: 13px;
+    font-size: 11px;
     color: #6B7280;
 }
 .linkedin-feed-deesc{
     font-family: var(--font-regular);
-    font-size: 14px;
+    font-size: 12px;
+    padding-top: 4px;
 }

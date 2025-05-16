@@ -78,6 +78,7 @@ class UserCarousel extends HTMLElement {
           flex: 1;
           gap: 16px;
           justify-content: center;
+          padding: 16px 0;
         }
 
         @media (max-width: 768px) {
